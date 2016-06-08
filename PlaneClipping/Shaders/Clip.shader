@@ -52,7 +52,9 @@
 				v2f o;
 
 				o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
+				//计算模型的真正世界坐标
 				o.worldPos = mul(_Object2World, v.vertex).xyz;
+
 				o.uv = v.uv;
 				return o;
 			}
