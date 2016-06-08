@@ -34,6 +34,7 @@ public class ClipObjControl : MonoBehaviour {
 
         clipPos = clipObjTrans.position;
 
+        //计算XY平面上的法向量，用XY平面作为剔除面
         clipNormal = clipObjTrans.rotation * Vector3.forward;
 
         SetMaterialValue(clipPos, clipNormal);

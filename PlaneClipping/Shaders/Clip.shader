@@ -41,12 +41,9 @@
 			float distanceToPlane(float3 pos, float3 objNormal, float3 pointInWorld)
 			{
 			  float3 w = - ( pos - pointInWorld );
-			  float res = ( objNormal.x * w.x + 
-							objNormal.y * w.y + 
-							objNormal.z * w.z ) 
-				/ sqrt( objNormal.x * objNormal.x +
-						objNormal.y * objNormal.y +
-						objNormal.z * objNormal.z );
+			  //根据数学公式，用平面的法向量计算距离
+			  float res = ( objNormal.x * w.x + objNormal.y * w.y + objNormal.z * w.z ) 
+							/ sqrt( objNormal.x * objNormal.x +	objNormal.y * objNormal.y +	objNormal.z * objNormal.z );
 			  return res;
 			}
 
