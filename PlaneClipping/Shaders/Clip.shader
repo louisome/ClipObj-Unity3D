@@ -3,6 +3,7 @@
 	Properties
 	{
 		_MainTex ("Texture", 2D) = "white" {}
+
 		_ClipY ("剔除 Y 值", float) = 0
 
 		[Space(10)]_ClipObjPos	("遮罩位置",	Vector)	= ( 0, 0, 0, 1 )
